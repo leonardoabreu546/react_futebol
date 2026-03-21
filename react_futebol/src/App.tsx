@@ -1,4 +1,5 @@
 import CardEquipa from './card_equipa'
+import CardJogador from './card_jogador'
 
 function App() {
   return (
