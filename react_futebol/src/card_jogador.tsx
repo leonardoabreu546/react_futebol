@@ -6,10 +6,12 @@ type Props = {
 
 function CardJogador (props: Props) {
     return(
-        <div>
-            <h2>{props.nome}</h2>
-            <p>{props.clube}</p>
-            <p>{props.idade}</p>
+        <div className="card">
+            <div className="card-body">
+                <h2>{props.nome}</h2>
+                <p>{props.clube}</p>
+                <p>{props.idade}</p>
+            </div> 
         </div>
     )
 }
