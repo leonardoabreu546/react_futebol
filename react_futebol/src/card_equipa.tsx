@@ -9,10 +9,10 @@ function CardEquipa(props: Props) {
   return (
     <div className="card">
       <div className="card-body">
-        <h2>{props.nome}</h2>
-        <p>{props.cor}</p>
-        <p>{props.ano}</p>
-        <p>{props.cidade}</p>
+        <h2>Nome: {props.nome}</h2>
+        <p>Cor: {props.cor}</p>
+        <p>Ano: {props.ano}</p>
+        <p>Cidade: {props.cidade}</p>
       </div>
     </div>
   )
