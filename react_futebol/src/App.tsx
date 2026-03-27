@@ -1,5 +1,6 @@
 import CardEquipa from './card_equipa'
 import CardJogador from './card_jogador'
+import ListaJogadores from './lista_jogadores'
 import { useState } from 'react'
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
       </div>  
 }
       {pagina === "jogadores" && 
-      <div>Página de jogadores</div>
+      <div>Página de jogadores
+        <ListaJogadores></ListaJogadores>
+      </div>
     }
     </div>    
   )
