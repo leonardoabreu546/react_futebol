@@ -1,3 +1,5 @@
+import CardJogador from './card_jogador'
+
 const jogadores = [
   { nome: "Ronaldo", clube: "Real Madrid", idade: 40 },
   { nome: "Messi", clube: "Barcelona", idade: 39 }
@@ -6,8 +8,8 @@ const jogadores = [
 function ListaJogadores(){
     return(
         <div>        
-            {jogadores.map(jogador=>(
-                <p>{jogador.nome}</p>
+            {jogadores.map((jogador, index) =>(
+                <CardJogador key={index} nome={jogador.nome} clube={jogador.clube} idade={jogador.idade}></CardJogador>
             ))}
         </div>
     )
