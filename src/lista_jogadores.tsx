@@ -11,7 +11,6 @@ function ListaJogadores(){
     const [jogador, setJogador] = useState("")
     return(
         
-
         <div>        
             {jogadores.filter(j => j.nome.includes(jogador)).map((jogador, index) =>(
                 <CardJogador key={index} nome={jogador.nome} clube={jogador.clube} idade={jogador.idade}></CardJogador>
@@ -20,7 +19,6 @@ function ListaJogadores(){
             <input onChange={e => setJogador(e.target.value)}></input>
 
         </div>
-
         
     )
 }
