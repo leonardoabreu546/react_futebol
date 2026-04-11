@@ -1,6 +1,7 @@
 import CardEquipa from './card_equipa'
 import CardJogador from './card_jogador'
 import ListaJogadores from './lista_jogadores'
+import ListaEquipas from './lista_equipas'
 import { useState } from 'react'
 
 function App() {
@@ -26,15 +27,23 @@ function App() {
           </div> 
         </div>
         <button onClick={() => setPagina("jogadores")}>Ver Jogadores</button>
+        <button onClick={() => setPagina("equipas")}>Ver equipas</button>
       </div>  
 }
       {pagina === "jogadores" && 
       <div>Página de jogadores
         <ListaJogadores></ListaJogadores>
       </div>
-    }
-    </div>    
-  )
 }
+      {pagina === "equipas" &&
+      <div>Página de equipas
+        <ListaEquipas></ListaEquipas>
+      </div> 
+}
+    </div>
+)    
+}
+
+
 
 export default App
