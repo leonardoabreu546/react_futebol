@@ -2,7 +2,7 @@ import CardEquipa from './card_equipa'
 import CardJogador from './card_jogador'
 import ListaJogadores from './lista_jogadores'
 import ListaEquipas from './lista_equipas'
-import EquipaAleatoria from './jogador_aleatorio'
+import EquipaAleatoria from './equipa_aleatoria'
 import { useState } from 'react'
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
         </div>
         <button onClick={() => setPagina("jogadores")}>Ver Jogadores</button>
         <button onClick={() => setPagina("equipas")}>Ver equipas</button>
+        <button onClick={() => setPagina("equipaAleatoria")}>Gerar equipa aleatória</button>
       </div>  
 }
       {pagina === "jogadores" && 
@@ -41,13 +42,12 @@ function App() {
         <ListaEquipas></ListaEquipas>
       </div> 
 }
-      {pagina === "aleatoria" &&
+      {pagina === "equipaAleatoria" &&
       <div>Página de equipa aleatória
         <EquipaAleatoria></EquipaAleatoria>
       </div> 
 }
-    </div>
-)    
-}
+    </div>   
+)}
 
 export default App
